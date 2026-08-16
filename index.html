@@ -215,13 +215,7 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- PAGE 2 - only if you have 5-8 bestsellers -->
-            <div class="bs-page">
-                <div class="product-grid">
-                    <!-- PRODUCT 5-8 here -->
-                </div>
-            </div>
+                        
         </div>
 
         <div class="bs-controls">
@@ -255,7 +249,7 @@
         const bsPrev = document.querySelector('.bs-prev');
         const bsNext = document.querySelector('.bs-next');
         const bsNum = document.querySelector('.bs-num');
-        const viewAllBtn = document.getElementById('viewAllBtn');
+        
         let bsCurrent = 0;
 
         function updateBsPage() {
@@ -263,7 +257,7 @@
             bsNum.textContent = `${bsCurrent + 1} / ${bsPages.length}`;
             bsPrev.disabled = bsCurrent === 0;
             bsNext.disabled = bsCurrent === bsPages.length - 1;
-            viewAllBtn.style.display = bsCurrent === bsPages.length - 1 ? 'block' : 'none';
+            
         }
         bsPrev.onclick = () => { bsCurrent--; updateBsPage(); }
         bsNext.onclick = () => { bsCurrent++; updateBsPage(); }
