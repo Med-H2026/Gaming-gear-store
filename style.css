@@ -1,5 +1,7 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
 :root{
@@ -8,8 +10,9 @@
     --main-color: rgb(99,136,236);
     --text-color: #ffffff;
 }
-body{
-    overflow-x: hidden; /*prevent overflow*/
+html,body{
+    overflow-x: hidden; /*prevents horizontal scroll*/
+    width: 100%;
 }
 img{
     max-width: 100%;
@@ -132,6 +135,9 @@ img{
 
 .btn-primary {
     background: rgb(99, 136, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #0a0a0f;
     text-decoration: none;
     padding: 14px 28px;
@@ -457,7 +463,10 @@ img{
         font-size: 0.85rem;
     }
     .hero-content h1{
-        font-size: 1.8rem;
+        font-size: clamp(1.8rem,8vw,2.2rem);/*scales text down*/
+    }
+    .hero-content p{
+        padding: 0 10px;
     }
     .hero-buttons{
         flex-direction: column;
@@ -468,7 +477,6 @@ img{
     .btn-primary, .btn-secondary{
         width: 100%;
         min-width: unset;
-        font-size: 0.95rem;
-        padding: 12px 20px;
+        padding: 14px 20px;
     }
 }
