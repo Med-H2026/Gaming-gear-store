@@ -108,6 +108,7 @@ img{
 }
 .hero-buttons{
     display: flex;
+    justify-content: center;
     gap: 16px;
     flex-wrap: wrap;
 }
@@ -133,9 +134,12 @@ img{
     background: rgb(99, 136, 236);
     color: #0a0a0f;
     text-decoration: none;
-    padding: 1.2rem 3rem;
+    padding: 14px 28px;
     border-radius: 12px;
     font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    min-width: 160px;/* keeps them same width*/
     box-shadow: 0 0 20px rgba(99, 136, 236, 0.6);
     transition: 0.3s;
     margin-right: 1.5rem;
@@ -414,10 +418,14 @@ img{
     .header{
         flex-direction: column;
         text-align: center;
+        padding: 16px 20px;
     }
     .nav-links{
         justify-content: center;
-        gap: 12px
+        gap: 10px 20px;/*row gap, column gap*/
+    }
+    .nav-links a{
+        font-size: 0.9rem;
     }
     .hero{
         flex-direction: column;
@@ -426,9 +434,6 @@ img{
     }
     .hero-content h1{
         font-size: 2.2rem;
-    }
-    .hero-buttons{
-        justify-content: center;
     }
     .section-title{
         font-size: 1.8rem;
@@ -453,5 +458,17 @@ img{
     }
     .hero-content h1{
         font-size: 1.8rem;
+    }
+    .hero-buttons{
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .btn-primary, .btn-secondary{
+        width: 100%;
+        min-width: unset;
+        font-size: 0.95rem;
+        padding: 12px 20px;
     }
 }
