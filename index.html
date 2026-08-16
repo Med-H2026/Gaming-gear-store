@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOOB SLAYER</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <section class="header">
+        
+        <a href="#" class="logo"><img src="images/logo.png" alt="NOOB SLAYER" /></a>
+        
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Shop Gear</a>
+            <a href="#">Best Sellers</a>
+            <a href="#">Reviews</a>
+            <a href="#">Contact Us</a>
+            <button class="btn-signin">SIGN IN</button>
+
+        </div>
+    </section>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>LEVEL UP YOUR <span>GEAR</span></h1>
+            <p>Premium controllers, headsets, and gear for players who refuse to lose.</p>
+            <div class="hero-buttons">
+                <a href="#shop" class="btn-primary">SHOP NOW</a>
+                <a href="#featured" class="btn-secondary">EXPLORE</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/gaming-setup.png" alt="Gaming Setup">
+        </div>
+    </section>
+
+    <!-- SHOP GEAR SECTION -->
+    <section class="shop-gear" id="shop">
+        <h2 class="section-title">SHOP <span>GEAR</span></h2>
+        <p class="shop-subtitle">Find everything you need to dominate</p>
+
+        <!-- Categories -->
+        <div class="category-filters">
+            <button class="cat-btn active" data-filter="all">ALL GEAR</button>
+            <button class="cat-btn" data-filter="controller">Controllers</button>
+            <button class="cat-btn" data-filter="audio">Headsets</button>
+            <button class="cat-btn" data-filter="monitor">Monitors</button>
+            <button class="cat-btn" data-filter="chair">Chairs</button>
+            <button class="cat-btn" data-filter="accessory">Accessories</button>
+        </div>
+
+        <!-- Product pages -->
+        <div class="shop-pages">
+            <div class="shop-page active">
+                <div class="product-grid">
+                    <!-- PRODUCT 1 -->
+                    <div class="product-card" data-category="controller">
+                        <img src="images/product1.png" alt="Gaming Controller">
+                        <div class="product-info">
+                            <h3>Pro X Controller</h3>
+                            <p>RGB Backlit • 1000Hz Polling</p>
+                            <div class="price">$89.99</div>
+                        </div>
+                        <a href="#" class="btn-buy">ADD TO CART</a>
+                    </div>
+
+                    <!-- PRODUCT 2 -->
+                    <div class="product-card" data-category="audio">
+                        <img src="images/product2.png" alt="Gaming Headset">
+                        <div class="product-info">
+                            <h3>Slayer 7.1 Headset</h3>
+                            <p>Noise Canceling • RGB Mic</p>
+                            <div class="price">$129.99</div>
+                        </div>
+                        <a href="#" class="btn-buy">ADD TO CART</a>
+                    </div>
+
+                    <!-- PRODUCT 3 -->
+                    <div class="product-card" data-category="accessory">
+                        <img src="images/product3.png" alt="Mechanical Keyboard">
+                        <div class="product-info">
+                            <h3>RGB Mechanical KB</h3>
+                            <p>Blue Switches • 60% Layout</p>
+                            <div class="price">$109.99</div>
+                        </div>
+                        <a href="#" class="btn-buy">ADD TO CART</a>
+                    </div>
+
+                    <!-- PRODUCT 4 -->
+                    <div class="product-card" data-category="accessory">
+                        <img src="images/product4.png" alt="Gaming Mouse">
+                        <div class="product-info">
+                            <h3>Noob Slayer Mouse</h3>
+                            <p>16000 DPI • 8 Buttons</p>
+                            <div class="price">$79.99</div>
+                        </div>
+                        <a href="#" class="btn-buy">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-page">
+                <div class="product-grid">
+
+                    <!-- PRODUCT 5 -->
+                    <div class="product-card" data-category="monitor">
+                        <img src="images/product5.png" alt="Gaming Monitor">
+                        <div class="product-info">
+                            <h3>Ultra 165Hz Monitor</h3>
+                            <p>27" 1ms • G-Sync</p>
+                            <div class="price">$349.99</div>
+                        </div>
+                        <a href="#" class="btn-buy">ADD TO CART</a>
+                    </div>
+                    <!-- PRODUCT 6 -->
+                    <div class="product-card" data-category="chair">
+                        <img src="images/product6.png" alt="Gaming Chair">
+                        <div class="product-info">
+                            <h3>Pro Gamer Chair</h3>
+                            <p>Lumbar Support • RGB</p>
+                            <div class="price">$279.99</div>
+                        </div>
+                        <a href="#" class="btn-buy">ADD TO CART</a>
+                    </div>
+                    <!-- PRODUCT 7 -->
+                    <div class="product-card" data-category="accessory">
+                        <img src="images/product7.png" alt="Gaming Webcam">
+                        <div class="product-info">
+                            <h3>4K Stream Cam</h3>
+                            <p>Auto Focus • Ring Light</p>
+                            <div class="price">$149.99</div>
+                        </div>
+                        <a href="#" class="btn-buy">ADD TO CART</a>
+                    </div>
+                    <!-- PRODUCT 8 -->
+                    <div class="product-card" data-category="accessory">
+                        <img src="images/product8.png" alt="RGB Mouse Pad">
+                        <div class="product-info">
+                            <h3>XL RGB Mouse Pad</h3>
+                            <p>900mm • Waterproof</p>
+                            <div class="price">$39.99</div>
+                        </div>
+                        <a href="#" class="btn-buy">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shop-controls">
+            <button class="shop-prev" disabled>PREV</button>
+            <span class="shop-num">1 / 2</span>
+            <button class="shop-next">NEXT</button>
+        </div>
+    </section>
+
+     <!-- BEST SELLERS SECTION -->
+    <section class="best-sellers" id="bestsellers">
+        <h2 class="section-title">BEST SELLING <span>GEAR</span></h2>
+        <p class="shop-subtitle">Our community's favorite loadouts</p>
+        
+        <div class="bs-pages">
+            <div class="bs-page active">
+                <div class="product-grid">
+                    <!-- PRODUCT 1 - TOP SELLER -->
+                    <div class="product-card">
+                        <span class="badge">BESTSELLER</span>
+                        <img src="images/product2.png" alt="Gaming Headset">
+                        <div class="product-info">
+                            <h3>Slayer 7.1 Headset</h3>
+                            <p>Noise Canceling • RGB Mic</p>
+                            <div class="price">$129.99 <span class="old-price">$159.99</span></div>
+                        </div>
+                        <a href="#" class="btn-buy">ADD TO CART</a>
+                    </div>
+
+                    <!-- PRODUCT 2 -->
+                    <div class="product-card">
+                        <span class="badge hot">HOT</span>
+                        <img src="images/product1.png" alt="Gaming Controller">
+                        <div class="product-info">
+                            <h3>Pro X Controller</h3>
+                            <p>RGB Backlit • 1000Hz Polling</p>
+                            <div class="price">$89.99</div>
+                        </div>
+                        <a href="#" class="btn-buy">ADD TO CART</a>
+                    </div>
+
+                    <!-- PRODUCT 3 -->
+                    <div class="product-card">
+                        <span class="badge">BESTSELLER</span>
+                        <img src="images/product6.png" alt="Gaming Chair">
+                        <div class="product-info">
+                            <h3>Pro Gamer Chair</h3>
+                            <p>Lumbar Support • RGB</p>
+                            <div class="price">$279.99</div>
+                        </div>
+                        <a href="#" class="btn-buy">ADD TO CART</a>
+                    </div>
+
+                    <!-- PRODUCT 4 -->
+                    <div class="product-card">
+                        <img src="images/product4.png" alt="Gaming Mouse">
+                        <div class="product-info">
+                            <h3>Noob Slayer Mouse</h3>
+                            <p>16000 DPI • 8 Buttons</p>
+                            <div class="price">$79.99</div>
+                        </div>
+                        <a href="#" class="btn-buy">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- PAGE 2 - only if you have 5-8 bestsellers -->
+            <div class="bs-page">
+                <div class="product-grid">
+                    <!-- PRODUCT 5-8 here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="bs-controls">
+            <button class="bs-prev" disabled>PREV</button>
+            <span class="bs-num">1 / 2</span>
+            <button class="bs-next">NEXT</button>
+        </div>
+    </section>
+   
+    <script>
+        // SHOP GEAR PAGINATION
+        const shopPages = document.querySelectorAll('.shop-page');
+        const shopPrev = document.querySelector('.shop-prev');
+        const shopNext = document.querySelector('.shop-next');
+        const shopNum = document.querySelector('.shop-num');
+        let shopCurrent = 0;
+
+        function updateShopPage() {
+            shopPages.forEach((p, i) => p.classList.toggle('active', i === shopCurrent));
+            shopNum.textContent = `${shopCurrent + 1} / ${shopPages.length}`;
+            shopPrev.disabled = shopCurrent === 0;
+            shopNext.disabled = shopCurrent === shopPages.length - 1;
+        }
+        shopPrev.onclick = () => { shopCurrent--; updateShopPage(); }
+        shopNext.onclick = () => { shopCurrent++; updateShopPage(); }
+        updateShopPage();
+
+
+        // BEST SELLERS PAGINATION
+        const bsPages = document.querySelectorAll('.bs-page');
+        const bsPrev = document.querySelector('.bs-prev');
+        const bsNext = document.querySelector('.bs-next');
+        const bsNum = document.querySelector('.bs-num');
+        const viewAllBtn = document.getElementById('viewAllBtn');
+        let bsCurrent = 0;
+
+        function updateBsPage() {
+            bsPages.forEach((p, i) => p.classList.toggle('active', i === bsCurrent));
+            bsNum.textContent = `${bsCurrent + 1} / ${bsPages.length}`;
+            bsPrev.disabled = bsCurrent === 0;
+            bsNext.disabled = bsCurrent === bsPages.length - 1;
+            viewAllBtn.style.display = bsCurrent === bsPages.length - 1 ? 'block' : 'none';
+        }
+        bsPrev.onclick = () => { bsCurrent--; updateBsPage(); }
+        bsNext.onclick = () => { bsCurrent++; updateBsPage(); }
+        updateBsPage();
+
+
+        // CATEGORY FILTER - only for SHOP GEAR
+        const filterBtns = document.querySelectorAll('.cat-btn');
+        const shopProducts = document.querySelectorAll('.shop-page .product-card'); // only target shop
+
+        filterBtns.forEach(btn => {
+            btn.onclick = () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const filter = btn.dataset.filter;
+                shopProducts.forEach(p => {
+                    p.style.display = (filter === 'all' || p.dataset.category === filter) ? 'flex' : 'none';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
