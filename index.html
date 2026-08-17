@@ -11,20 +11,24 @@
 </head>
 <body>
     <!-- HEADER -->
-    <section class="header">
+    <header class="header">
         
-        <a href="#" class="logo"><img src="images/logo.png" alt="NOOB SLAYER" /></a>
-        
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Shop Gear</a>
-            <a href="#">Best Sellers</a>
-            <a href="#">Reviews</a>
-            <a href="#">Contact Us</a>
-            <button class="btn-signin">SIGN IN</button>
-
-        </div>
-    </section>
+        <a href="#" class="logo"><img src="images/logo.png" alt="NOOB SLAYER LOGO" /></a>
+        <!--HUMBURGER MENU-->
+        <button class="humburger" id="humburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-links" id="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#shop-gear">Shop Gear</a>
+            <a href="#best-sellers">Best Sellers</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#" class="btn-signin">SIGN IN</a>
+        </nav>
+    </header>
 
 
     <!-- HERO SECTION -->
@@ -279,6 +283,25 @@
                 });
             }
         });
+        
+        // HAMBURGER MENU
+        
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Close menu when you click a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+
     </script>
 </body>
 </html>
