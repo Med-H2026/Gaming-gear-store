@@ -19,7 +19,7 @@ img{
     height: auto;
 }
 .btn-signin{
-    background-color: rgb(245, 235, 235);
+    background-color: rgb(197, 156, 235);
     border: 2px solid var(--main-color);
     color: rgb(126, 93, 156);
     font-size: 13px;
@@ -422,19 +422,22 @@ img{
 .hamburger{
     display: none;/*hidden on desktop*/
     flex-direction: column;
-    gap: 5px;
-    background: none;
+    justify-content: space-between;
+    width: 28px;
+    height: 22px;
+    background: transparent;/*take header color*/
     border: none;
     cursor: pointer;
-    padding: 10px;
+    padding: 0;
     z-index: 1001;
 }
 .hamburger span{
-    width: 25px;
+    display: block;/*makes lines appear*/
+    width: 100%;
     height: 3px;
-    background: #fff;
+    background: #ffffff;
     border-radius: 2px;
-    transition: 0.3s;
+    transition: all 0.3s ease-in-out;
 }
 
 /*mobile : Tablet 768px and below */
@@ -465,16 +468,19 @@ img{
         height: 80px;
     }
     .nav-links{
-        position: absolute;
-        top: 100px;/*below logo*/
-        left: 0;
+        position: fixed;/*fixed so it covers screen*/
+        top: 90px;/*below logo*/
+        left: -100%;/*hide off screen*/
         width: 100%;
+        height: calc(100vh - 90px);
         background: #0a0a0a;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
-        padding: 30px 0;
-        display: none;/*hidden by default*/
+        justify-content: flex-start;
+        gap: 30px;
+        padding-top: 40px;
+        display: flex;
+        transition: left 0.3s ease;
         border-top: 1px solid #222;
         z-index: 1000;
     }
@@ -483,7 +489,7 @@ img{
         white-space: nowrap;/*stops "best sellers" to break into 2 lines*/
     }
     .nav-links.active{
-        display: flex;/*show when clicked*/
+        left: 0; /*slide in*/
     }
     .btn-signin{
         padding: 8px 20px;
