@@ -424,13 +424,25 @@ img{
     .header{
         flex-direction: column;
         text-align: center;
-        padding: 16px 20px;
+        padding: 20px 16px;
+        gap: 16px;
+    }
+    .logo img{
+        height: 80px;
     }
     .nav-links{
+        width: 100%;
+        display: flex;
         justify-content: center;
-        gap: 10px 20px;/*row gap, column gap*/
+        flex-wrap: wrap;
+        gap: 12px 20px;/*row gap, column gap*/
     }
     .nav-links a{
+        font-size: 0.95rem;
+        white-space: nowrap;/*stops "best sellers" to break into 2 lines*/
+    }
+    .btn-signin{
+        padding: 8px 20px;
         font-size: 0.9rem;
     }
     .hero{
@@ -455,9 +467,13 @@ img{
         grid-template-columns: 1fr;/* 1 card per row*/
     }
     .nav-links{
-        gap: 8px;
+        gap: 10px 16px;
         font-size: 0.85rem;
     }
+    .nav-links a{
+        font-size: 0.9rem;
+    }
+
     .cat-btn{
         padding: 8px 14px;
         font-size: 0.85rem;
