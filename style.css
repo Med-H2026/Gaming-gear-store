@@ -262,6 +262,7 @@ img{
 }
 .best-sellers .shop-subtitle{
     margin-left: 21%;
+    font-size: clamp(28px, 6vw, 40px);
 }
 .section-title {
     text-align: center;
@@ -950,5 +951,9 @@ img{
         min-width: unset;
         padding: 14px 20px;
     }
+    .best-sellers .shop-subtitle{
+    margin-left: 15%;
+
+}
    
 }
